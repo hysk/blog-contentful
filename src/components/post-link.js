@@ -4,7 +4,7 @@ import "../styles/post-link.css"
 
 export default function PostLink({ post }) {
   const { title, publishDate, coverImage } = post;
-  const description = post.body.raw;
+  const description = post.body.raw || 'no desc';
   const pageLink = `/post/${post.slug}/`
 
   return (
