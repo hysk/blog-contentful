@@ -17,7 +17,13 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query allContentfulPost {
-    allContentfulBlog {
+    allContentfulBlog(
+      sort: {
+        fields: publishDate,
+        order: DESC
+        }
+    )
+    {
       edges {
         node {
           title
