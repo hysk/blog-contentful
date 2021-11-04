@@ -17,9 +17,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               title
             }
             publishDate(locale: "ja-JP", formatString: "YYYY-MM-DD")
-            body {
-              raw
-            }
             bodyMarkdown {
               childMarkdownRemark {
                 html

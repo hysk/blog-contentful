@@ -35,9 +35,6 @@ export const query = graphql`
             title
           }
           publishDate(locale: "ja-JP", formatString: "YYYY-MM-DD")
-          body {
-            raw
-          }
           bodyMarkdown {
             bodyMarkdown
           }
