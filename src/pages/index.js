@@ -41,5 +41,11 @@ export const query = graphql`
         }
       }
     }
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
   }
 `

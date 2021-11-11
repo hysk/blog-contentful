@@ -1,11 +1,12 @@
 import React from "react"
 import "../styles/post.css"
 import Layout from "../components/layout"
+import HeadHelmet from "../components/head-helmet"
 
 export default function Post({ pageContext }) {
   const { title, publishDate, coverImage } = pageContext.post;
-  //const body = pageContext.post.bodyMarkdown.bodyMarkdown.childMarkdownRemark.html;
   const body = pageContext.post.bodyMarkdown.childMarkdownRemark.html;
+  const description = pageContext.post.description ? pageContext.post.description.description : '';
 
   let cover;
   if (coverImage) {
@@ -14,6 +15,10 @@ export default function Post({ pageContext }) {
 
   return (
     <Layout>
+      <HeadHelmet
+        title={title}
+        description={description}
+      />
       <div className="post-header">
         <h1>{title}</h1>
         <p className="post-date">{publishDate}</p>

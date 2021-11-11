@@ -15,8 +15,6 @@ export default function PostLink({ post }) {
     image = NO_IMAGE
   }
 
-  console.log(image)
-
           //<!-- <img src={coverImage.file.url} className="post-link-image" alt="post-cover"></img> -->
   return (
     <Link to={pageLink} className="post-link-anchor">
