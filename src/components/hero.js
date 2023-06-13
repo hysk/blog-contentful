@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="hero-author">
         <img src={ICON} className="hero-author-image" alt="avatar"></img>
         <p className="hero-author-text">
-            Techな備忘をつらつらと
+            Techな備忘をつらつらと書く
         </p>
       </div>
     </div>
